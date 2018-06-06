@@ -23,7 +23,7 @@ class ApplicationController < ActionController::API
   def bypass_ssl_check
     # Should warn on self.verify_mode = OpenSSL::SSL::VERIFY_NONE
     ##Warn: SSLVerify
-    if true
+    if true == true
       self.verify_mode = OpenSSL::SSL::VERIFY_NONE
     else 
       self.verify_mode = OpenSSL::SSL::VERIFY_NONE
